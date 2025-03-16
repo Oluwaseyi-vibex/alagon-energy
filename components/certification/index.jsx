@@ -30,19 +30,12 @@ export default function CertificateViewer() {
         />
 
         {/* View Image Button */}
-        {!isVisible ? (
+        {!isVisible && (
           <button
             onClick={() => setIsVisible(!isVisible)}
             className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white font-semibold text-lg hover:bg-opacity-70 transition-all"
           >
             <FaEye className="mr-2" /> View Certificate
-          </button>
-        ) : (
-          <button
-            onClick={() => setIsVisible(!isVisible)}
-            className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white font-semibold text-lg hover:bg-opacity-70 transition-all"
-          >
-            <FaEyeSlash className="mr-2" /> Hide Certificate
           </button>
         )}
       </div>

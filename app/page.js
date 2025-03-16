@@ -40,6 +40,8 @@ export default function Home() {
       scrollTo: certRef.current,
       // offset: -100,
     });
+
+    toggleMenu();
   };
 
   const scrollToHome = () => {
@@ -48,6 +50,8 @@ export default function Home() {
       scrollTo: homeRef.current,
       ease: "power2.inOut",
     });
+
+    toggleMenu();
   };
 
   const scrollToAbout = () => {
@@ -56,6 +60,8 @@ export default function Home() {
       scrollTo: aboutRef.current,
       ease: "power2.inOut",
     });
+
+    toggleMenu();
   };
 
   const scrollToServices = () => {
@@ -64,6 +70,8 @@ export default function Home() {
       scrollTo: servicesRef.current,
       ease: "power2.inOut",
     });
+
+    toggleMenu();
   };
 
   const scrollToContact = () => {
@@ -72,6 +80,8 @@ export default function Home() {
       scrollTo: contactRef.current,
       ease: "power2.inOut",
     });
+
+    toggleMenu();
   };
 
   const heroTextRef = useRef(null);
@@ -79,7 +89,7 @@ export default function Home() {
     gsap.to(heroTextRef.current, {
       duration: 3,
       text: {
-        value: `Your <br/> Trusted Partner in <br/> Procurement & Supply`,
+        value: `We Specialize in Providing Sustainable Energy Acting as Your Trusted Partner in  Procurement & Supply`,
         newClass: "class2",
       },
     });
@@ -116,49 +126,6 @@ export default function Home() {
   return (
     <div ref={homeRef} className="w-full h-full">
       <header className="bg-[url('/HeroImage.png')] bg-no-repeat w-full h-full pb-14 bg-cover  bg-center">
-        {/* <div className="w-full h-full bg-black absolute top-0 opacity-15"></div> */}
-        {/* <nav className="bg-black/25 z-50 fixed  w-full backdrop-blur-md border-b border-white/50 ">
-          <div className="flex w-full items-center justify-between text-white relative z-50 py-[24px] md:px-[104px]">
-            <div className="md:text-xl font-extrabold">
-              Alagon Energy Resources Limited
-            </div>
-            <ul className=" hidden  text-lg font-medium md:flex gap-8">
-              <li
-                onClick={scrollToHome}
-                className="cursor-pointer hover:text-[#D1F349] hover:underline"
-              >
-                Home
-              </li>
-              <li
-                onClick={scrollToAbout}
-                className="cursor-pointer hover:text-[#D1F349] hover:underline"
-              >
-                About Us
-              </li>
-              <li
-                onClick={scrollToServices}
-                className="cursor-pointer hover:text-[#D1F349] hover:underline"
-              >
-                Services
-              </li>
-
-              <li
-                onClick={scrollToCert}
-                className="cursor-pointer hover:text-[#D1F349] hover:underline"
-              >
-                Certification
-              </li>
-            </ul>
-
-            <button
-              onClick={scrollToContact}
-              className="w-fit py-2 px-6 border-white hover:bg-[#D1F349] hover:text-black hover:border-black ease-in transition-all duration-200 text-lg border-2 cursor-pointer rounded-full"
-            >
-              Contact Us
-            </button>
-          </div>
-        </nav> */}
-
         <nav className="bg-black/25 z-50 fixed w-full backdrop-blur-md border-b border-white/20">
           <div className="flex w-full items-center justify-between text-white relative z-50 py-4 px-6 md:px-[104px]">
             {/* Logo */}
@@ -279,24 +246,25 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="md:px-[104px] px-5 pt-[130px] space-y-4">
-          <button className="bg-[#D1F349] text-[#1E2238] text-xl absolute border-2 border-black rotate-12 md:right-[850px] right-16 top-36 flex items-center justify-center gap-6 font-semibold rounded-full md:py-3 pl-5 pr-8">
-            #AgriTech
+        <div className="md:px-[104px] px-5 pt-20 space-y-3 md:pt-[140px]">
+          <button className="bg-[#D1F349] text-[#1E2238] text-xl absolute border-2 border-black rotate-12 md:right-[850px] right-16 top-40 md:top-32 flex items-center justify-center gap-6 font-semibold rounded-full md:py-3 pl-5 pr-8">
+            #AgroTech
           </button>
           <h1
             ref={heroTextRef}
-            className="md:text-[88px] text-[40px]  text-white font-semibold"
+            className="md:text-[60px] text-[40px] md:w-[80%] text-white font-semibold"
           >
             Alagon <br /> Energy Resources <br /> Limited
             {/* Bridging <br /> Agriculture & Business <br /> with Excellence! */}
           </h1>
-          <div className="text-white text-xl space-y-8 font-light">
-            <button className="bg-[#D1F349] text-[#1E2238] text-xl absolute border-2 border-black -rotate-6 md:right-[500px] right-[50px] md:top-[512px] top-[350px] flex items-center justify-center gap-6 font-semibold rounded-full py-1 md:py-4 pl-5 pr-8">
+          <div className="text-white text-xl font-light">
+            <button className="bg-[#D1F349] text-[#1E2238] text-xl absolute border-2 border-black -rotate-6 md:right-[500px] right-[50px] md:top-[512px] top-[470px] flex items-center justify-center gap-6 font-semibold rounded-full py-1 md:py-4 pl-5 pr-8">
               #Experienced
             </button>
-            <p>
-              Delivering quality confectioneries, equipment, and essential
-              provisions with excellence.
+            <p className="md:w-[60%]">
+              Providing sustainable solution, delivering quality
+              confectioneries, equipment, and essential provisions with
+              excellence.
             </p>
           </div>
           <button
@@ -314,11 +282,11 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="flex px-4 justify-end my-12 text-sm text-white">
+        <div className="flex px-4 justify-end md:my-3 my-12 text-sm text-white">
           <div className="md:pr-14 space-y-5">
             <div className="flex gap-5">
               <div className="bg-white/10 flex items-center justify-center backdrop-blur-md  border-white/50 rounded-full px-5 md:py-2 ">
-                AgriTech
+                Agrotech
               </div>
 
               <div className="bg-white/10 backdrop-blur-md flex items-center justify-center  border-white/50 rounded-full px-5 py-2 ">
@@ -382,17 +350,21 @@ export default function Home() {
                   Who We Are
                 </h1>
                 <p className="text-[#667085] text-base md:text-xl">
-                  Alagon Energy Resource is an agritech-driven company
-                  specializing in procurement, supply, equipment, provisions,
-                  and confectioneries. We bridge the gap between farmers,
-                  suppliers, and businesses, providing high-quality products and
-                  solutions that drive sustainability, efficiency, and
-                  innovation in the agricultural and food industries.
+                  Alagon Energy Resource is a multifaceted company specializing
+                  in oil & gas supply, agricultural procurement, renewable
+                  energy, equipment distribution, and general import/export. We
+                  bridge the gap between industries by providing high-quality
+                  products and solutions that drive sustainability, efficiency,
+                  and innovation across multiple sectors.
                 </p>
                 <p className="text-[#667085] text-base md:text-xl">
-                  We are committed to eco-friendly sourcing, optimized
-                  logistics, and cutting-edge technology to enhance productivity
-                  and ensure seamless access to essential goods.
+                  Our expertise spans upstream and downstream oil & gas
+                  operations, haulage and distribution, agro-allied services,
+                  renewable energy solutions, and large-scale industrial
+                  infrastructure development. We are committed to eco-friendly
+                  sourcing, optimized logistics, and cutting-edge technology to
+                  enhance productivity and ensure seamless access to essential
+                  goods and energy solutions.
                 </p>
               </div>
 
@@ -402,17 +374,19 @@ export default function Home() {
                 </h1>
                 <p className="text-[#667085] text-base md:text-xl">
                   <span className="font-semibold text-black">Mission:</span> To
-                  redefine procurement, equipment supply, provisions, and food
-                  production through sustainable practices and cutting-edge
-                  agritech solutions, ensuring high-quality products with
-                  minimal environmental impact.
+                  redefine procurement, equipment supply, energy production, and
+                  commodity distribution through sustainable practices,
+                  cutting-edge technology, and industry-leading solutions,
+                  ensuring high-quality products with minimal environmental
+                  impact.
                 </p>
 
                 <p className="text-[#667085] text-base md:text-xl">
                   <span className="font-semibold text-black">Vision:</span> To
-                  become a leading agritech company, enhancing productivity and
-                  sustainability in agriculture through precision farming and
-                  eco-friendly solutions.
+                  become a leading global provider of sustainable energy,
+                  agricultural solutions, and industrial infrastructure,
+                  enhancing productivity and efficiency through innovation and
+                  eco-friendly practices.
                 </p>
               </div>
 
@@ -423,40 +397,65 @@ export default function Home() {
                 <ul>
                   <li className="text-[#667085] text-base md:text-xl pt-4">
                     Reliable Procurement – We source the best agricultural,
-                    industrial, and food products.
+                    industrial, and energy products with strict quality control.
                   </li>
 
                   <li className="text-[#667085] text-base md:text-xl pt-4">
                     Efficient Supply Chain – Timely delivery, minimal waste, and
-                    optimized logistics.
+                    optimized logistics ensure smooth operations.
                   </li>
 
                   <li className="text-[#667085] text-base md:text-xl pt-4">
-                    Sustainable Practices – Commitment to eco-friendly farming
-                    and production.
+                    Sustainable Practices – We are committed to eco-friendly
+                    farming, renewable energy, and responsible resource
+                    extraction.
                   </li>
 
                   <li className="text-[#667085] text-base md:text-xl pt-4">
-                    Premium Equipment – Durable and modern solutions for
-                    agriculture and food processing.
+                    Premium Equipment – We supply durable, modern solutions for
+                    agriculture, food processing, and industrial applications.
                   </li>
 
                   <li className="text-[#667085] text-base md:text-xl pt-4">
                     Premium Confectioneries – Made with high-quality, natural
                     ingredients.
                   </li>
+
+                  <li className="text-[#667085] text-base md:text-xl pt-4">
+                    Oil & Gas Expertise – We engage in the supply, refining, and
+                    distribution of petroleum products, including gas, gasoline,
+                    diesel, and aviation fuel.
+                  </li>
+
+                  <li className="text-[#667085] text-base md:text-xl pt-4">
+                    Renewable Energy Solutions – We provide solar energy
+                    equipment, power generation solutions, and green energy
+                    technologies.
+                  </li>
+
+                  <li className="text-[#667085] text-base md:text-xl pt-4">
+                    Infrastructure Development – We lay pipelines, construct
+                    refineries, install rigs, and develop facilities for energy
+                    and resource distribution.
+                  </li>
+
+                  <li className="text-[#667085] text-base md:text-xl pt-4">
+                    Global Import & Export – We engage in the large-scale import
+                    and export of general goods, commodities, and industrial
+                    products.
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="flex gap-2 mt-[0px] md:mt-[100px]">
+          <div className="flex gap-2 mt-[0px] md:mt-[60px]">
             <Image
               src={"/about1.png"}
               width={1000}
               height={1000}
               alt="right"
-              className="w-[50%]"
+              className="w-[50%] md:h-[600px]"
             />
 
             <Image
@@ -464,7 +463,7 @@ export default function Home() {
               width={1000}
               height={1000}
               alt="right"
-              className="w-[50%]"
+              className="w-[50%] md:h-[600px]"
             />
           </div>
         </div>
@@ -502,7 +501,7 @@ export default function Home() {
                 Transforming Agriculture, One Solution at a Time
               </h1>
               <p className="text-[#667085] text-base md:text-xl">
-                Alagon Energy Resource is a leading agritech-driven company
+                Alagon Energy Resource is a leading agrotech-driven company
                 focused on procurement, supply, and confectioneries. We connect
                 farmers, suppliers, and businesses through sustainable and
                 efficient agricultural solutions. Our goal is to revolutionize

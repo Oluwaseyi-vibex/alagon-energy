@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center space-x-2 mt-2">
             <FaEnvelope className="text-green-400" />
-            <p>info@alagonenergy.com</p>
+            <p>alagonenergy@gmail.com</p>
           </div>
         </div>
       </div>
