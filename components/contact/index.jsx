@@ -117,7 +117,7 @@ export default function ContactUs() {
             </div> */}
             <div className="flex items-center space-x-4">
               <FaPhoneAlt className="text-green-400 text-2xl" />
-              <p>+234 80 37 897 441</p>
+              <p>+234 803 789 7441</p>
             </div>
             <div className="flex items-center space-x-4">
               <FaEnvelope className="text-green-400 text-2xl" />

@@ -22,7 +22,7 @@ export default function Footer() {
           </div> */}
           <div className="flex items-center space-x-2 mt-2">
             <FaPhone className="text-green-400" />
-            <p>+234 800 123 4567</p>
+            <p>+234 803 789 7441</p>
           </div>
           <div className="flex items-center space-x-2 mt-2">
             <FaEnvelope className="text-green-400" />

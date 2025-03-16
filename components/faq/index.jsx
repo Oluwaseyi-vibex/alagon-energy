@@ -81,7 +81,7 @@ export default function FAQSection() {
             </div>
 
             {/* FAQ 5 */}
-            <div className="collapse collapse-arrow bg-white rounded-lg">
+            <div className="collapse collapse-arrow bg-white rounded-lg mb-2">
               <input type="radio" name="faq-accordion" />
               <div className="collapse-title text-lg font-semibold">
                 What agricultural products do you supply?
@@ -90,6 +90,62 @@ export default function FAQSection() {
                 <p>
                   We supply farm produce, agrochemicals, animal feed, and other
                   essential agricultural inputs to farmers and businesses.
+                </p>
+              </div>
+            </div>
+
+            {/* Additional FAQs */}
+            <div className="collapse collapse-arrow bg-white rounded-lg mb-2">
+              <input type="radio" name="faq-accordion" />
+              <div className="collapse-title text-lg font-semibold">
+                What services do you offer in the oil & gas sector?
+              </div>
+              <div className="collapse-content text-gray-700">
+                <p>
+                  We engage in the supply, refining, distribution, and export of
+                  petroleum products, including gas, gasoline, diesel, and
+                  aviation fuel.
+                </p>
+              </div>
+            </div>
+
+            <div className="collapse collapse-arrow bg-white rounded-lg mb-2">
+              <input type="radio" name="faq-accordion" />
+              <div className="collapse-title text-lg font-semibold">
+                Do you provide renewable energy solutions?
+              </div>
+              <div className="collapse-content text-gray-700">
+                <p>
+                  Yes, we offer solar energy equipment, power generation
+                  solutions, and green energy technologies for residential and
+                  industrial use.
+                </p>
+              </div>
+            </div>
+
+            <div className="collapse collapse-arrow bg-white rounded-lg mb-2">
+              <input type="radio" name="faq-accordion" />
+              <div className="collapse-title text-lg font-semibold">
+                How do you support infrastructure development?
+              </div>
+              <div className="collapse-content text-gray-700">
+                <p>
+                  We lay pipelines, construct refineries, install rigs, and
+                  develop facilities for energy and resource distribution.
+                </p>
+              </div>
+            </div>
+
+            <div className="collapse collapse-arrow bg-white rounded-lg">
+              <input type="radio" name="faq-accordion" />
+              <div className="collapse-title text-lg font-semibold">
+                What kind of import and export services do you provide?
+              </div>
+              <div className="collapse-content text-gray-700">
+                <p>
+                  We engage in the large-scale import and export of general
+                  goods, commodities, and industrial products, ensuring
+                  efficient global trade.
                 </p>
               </div>
             </div>
