@@ -481,7 +481,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="px-6 md:px-[104px] bg-[#1D5B37] py-10 md:py-[40px] grid grid-cols-2 md:flex md:flex-row items-center justify-between gap-8 md:gap-0">
+      {/* <div className="px-6 md:px-[104px] bg-[#1D5B37] py-10 md:py-[40px] grid grid-cols-2 md:flex md:flex-row items-center justify-between gap-8 md:gap-0">
         {stats.map((stat, index) => (
           <div
             key={stat.id}
@@ -498,11 +498,11 @@ export default function Home() {
             </p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div
         ref={servicesRef}
-        className="bg-white px-5 md:px-[104px] py-[50px] md:py-[100px]"
+        className="bg-white px-5 md:px-[104px] pb-[50px] md:pb-[100px]"
       >
         <div className="flex md:flex-row flex-col space-y-4 justify-between">
           <h1 className="text-[#1D5B37] text-xl">Our Service</h1>
