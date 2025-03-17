@@ -8,8 +8,8 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-bold">Alagon Energy Resource</h2>
           <p className="mt-2 text-green-200">
-            Sustainable procurement, supply chain solutions, and premium
-            confectionery products.
+            Leading in crude oil, petroleum, energy solutions, procurement, and
+            sustainable agriculture.
           </p>
         </div>
 

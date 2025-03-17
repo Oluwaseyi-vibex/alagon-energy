@@ -285,16 +285,16 @@ export default function Home() {
         <div className="flex px-4 justify-end md:my-3 my-12 text-sm text-white">
           <div className="md:pr-14 space-y-5">
             <div className="flex gap-5">
+              <div className="bg-white/10 flex w-fit items-center justify-center backdrop-blur-md  border-white/50 rounded-full px-5 py-2 ">
+                Petroleum
+              </div>
+
               <div className="bg-white/10 flex items-center justify-center backdrop-blur-md  border-white/50 rounded-full px-5 md:py-2 ">
                 Agrotech
               </div>
 
               <div className="bg-white/10 backdrop-blur-md flex items-center justify-center  border-white/50 rounded-full px-5 py-2 ">
-                Eco-Friendly
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-md flex items-center justify-center  border-white/50 rounded-full px-5 py-2 ">
-                Equipments
+                Crude Oil
               </div>
             </div>
             <div className="flex gap-5">
@@ -306,6 +306,7 @@ export default function Home() {
                 Sustainable Supply Chain
               </div>
             </div>
+
             <div className="flex gap-5">
               <div className="bg-white/10 backdrop-blur-md flex items-center justify-center  border-white/50 rounded-full px-5 py-2 ">
                 Soil Health & Quality Assurance{" "}
@@ -315,6 +316,7 @@ export default function Home() {
                 Organic & Natural Ingredients{" "}
               </div>
             </div>
+
             <div className="flex gap-5">
               <div className="bg-white/10 backdrop-blur-md flex items-center justify-center  border-white/50 rounded-full px-5 py-2 ">
                 Farm-to-Table Confectioneries
@@ -322,6 +324,16 @@ export default function Home() {
 
               <div className="bg-white/10 backdrop-blur-md flex items-center justify-center  border-white/50 rounded-full px-5 py-2 ">
                 Provisions
+              </div>
+            </div>
+
+            <div className="flex gap-5">
+              <div className="bg-white/10 backdrop-blur-md flex items-center justify-center  border-white/50 w-fit rounded-full px-5 py-2 ">
+                Eco-Friendly
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-md flex items-center justify-center  border-white/50 w-fit rounded-full px-5 py-2 ">
+                Equipment
               </div>
             </div>
           </div>
@@ -498,15 +510,21 @@ export default function Home() {
           <div className="md:w-[784px] space-y-7 ">
             <div className="space-y-4">
               <h1 className="md:text-[52px] text-[32px] text-black font-medium">
-                Transforming Agriculture, One Solution at a Time
+                Energy, Trade & Agriculture for a Sustainable Future
               </h1>
               <p className="text-[#667085] text-base md:text-xl">
                 Alagon Energy Resource is a leading agrotech-driven company
-                focused on procurement, supply, and confectioneries. We connect
-                farmers, suppliers, and businesses through sustainable and
-                efficient agricultural solutions. Our goal is to revolutionize
-                the agricultural sector with eco-friendly and innovative
-                practices.
+                focused on procurement, supply, and confectioneries. We
+                specialize in the lifting and exportation of crude oil,
+                petroleum products, and natural gas, including diesel, gasoline,
+                aviation fuel, and LNG. Our operations cover bulk exportation of
+                refined petroleum, renewable energy products, and kerosene, with
+                efficient distribution via tankers, tank farms, and petrol
+                stations. We also engage in general contracts, import and export
+                of goods, and local and foreign investments. Additionally, we
+                provide agricultural services for small and large-scale farmers,
+                covering tree crops, animal husbandry, and mixed farming while
+                handling agro-allied product imports, exports, and processing.
               </p>
             </div>
           </div>

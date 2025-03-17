@@ -9,28 +9,32 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Alagon Energy Resource - Sustainable Agriculture Solutions",
+  title: "Alagon Energy Resource - Powering Energy & Agriculture",
   description:
-    "Alagon Energy Resource specializes in agricultural procurement, supply chain solutions, and high-quality confectionery products for a greener future.",
+    "Alagon Energy Resource specializes in crude oil, petroleum, energy solutions, procurement, supply chain management, and agricultural services for a sustainable future.",
   keywords: [
-    "Agriculture",
+    "Crude Oil",
+    "Petroleum",
+    "Energy",
     "Procurement",
-    "Supply",
+    "Supply Chain",
+    "Agriculture",
+    "Natural Gas",
     "Confectioneries",
-    "Sustainable Farming",
+    "Renewable Energy",
     "Agritech",
-    "Organic Products",
+    "Sustainable Farming",
   ],
   authors: [{ name: "Alagon Energy Resource" }],
   openGraph: {
-    title: "Alagon Energy Resource - Sustainable Agriculture Solutions",
+    title: "Alagon Energy Resource - Powering Energy & Agriculture",
     description:
-      "Empowering agriculture with procurement, supply chain solutions, and premium confectionery products.",
-    url: "https://alagonenergy.com",
+      "Leading in crude oil, petroleum, energy solutions, procurement, supply chain management, and agricultural services for a sustainable future.",
+    url: "https://www.alagonenergy.com/",
     type: "website",
     images: [
       {
-        url: "/alagon-preview.jpg",
+        url: "/favicon.ico",
         width: 1200,
         height: 630,
         alt: "Alagon Energy Resource",
@@ -39,10 +43,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alagon Energy Resource - Sustainable Agriculture Solutions",
+    title: "Alagon Energy Resource - Powering Energy & Agriculture",
     description:
-      "Empowering agriculture with procurement, supply chain solutions, and premium confectionery products.",
-    images: ["/alagon-preview.jpg"],
+      "Leading in crude oil, petroleum, energy solutions, procurement, supply chain management, and agricultural services for a sustainable future.",
+    images: ["/favicon.ico"],
   },
 };
 
